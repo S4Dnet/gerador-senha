@@ -41,7 +41,7 @@ body{
 }
 
 h1{
-    font-size: clamp(1.8rem, 4vw, 2.5rem); /* responsivo */
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: 400;
     text-align: center;
     letter-spacing: -1.2px;
@@ -87,7 +87,6 @@ label{
     height: auto;
 }
 
-/* Container grid 2x2 */
 .checkboxes {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -140,7 +139,6 @@ label{
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1.5 5.69997L4.35714 8.49997L10.5 1.49997" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center / contain;
 }
 
-/* Reordenação para grid 2x2 */
 .checkbox-item:nth-child(1) { grid-column: 1; grid-row: 1; }
 .checkbox-item:nth-child(2) { grid-column: 1; grid-row: 2; }
 .checkbox-item:nth-child(3) { grid-column: 2; grid-row: 1; }
@@ -301,13 +299,13 @@ h4{
     }
 
     .passo1 figure{
-        order: -1; /* imagem acima do passo 1 */
+        order: -1; 
         max-width: 80%;
     }
 
     .checkboxes {
         justify-content: center;
-        grid-template-columns: 1fr; /* uma coluna no mobile */
+        grid-template-columns: 1fr;
         gap: 0.75rem;
     }
 
@@ -341,3 +339,4 @@ h4{
         padding: 1rem;
     }
 }
+
